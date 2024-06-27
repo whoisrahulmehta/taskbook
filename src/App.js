@@ -55,11 +55,11 @@ useEffect(()=>{
   return (
     <Provider store={store}>
     <div className="App ">
-     <BrowserRouter  basename="/">
+     <HashRouter  basename="/">
      {
       loading ? <Loadingpage /> : <Landingpage  />
      }
-     </BrowserRouter>
+     </HashRouter>
     </div>
     </Provider>
   );
