@@ -1,0 +1,28 @@
+.Loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  p {
+    color: gold;
+    font-size: 5rem;
+    b{
+        color: white;
+    }
+  }
+}
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+    color: gold;
+  }
+  50% {
+    background-position: 100% 50%;
+    color: red;
+  }
+  100% {
+    background-position: 0% 50%;
+    color: gold;
+  }
+}

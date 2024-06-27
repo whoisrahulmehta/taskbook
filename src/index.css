@@ -1,13 +1,728 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+:root {
+  /* let make some variables */
+  --primary-bg-color: aliceblue;
+  --secondary-bg-color: purple;
+  --tertiary-bg-color: orange;
+  --heading-font-size: 2rem;
+  --text-font-size: 1rem;
+  --primary-font-color: ghostwhite;
+  --secondary-font-color: rgb(255, 255, 255);
+  --hover-color: red;
+  --border-radius-default: 40px;
+  --zoom-efect: scaleX(1.06) scaleY(1.05);
+  --trans-hover-efe: all ease 0.5s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  /* color:var(--secondary-font-color); */
+  color: var(--primary-font-color);
+  text-decoration: none;
 }
+
+a:hover {
+  text-decoration: underline;
+  /* text-decoration-color: black; */
+  color: var(--hover-color);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 420px;
+  margin: 2px auto;
+  /* background-color: var(--secondary-bg-color); */
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 1px 10px 10px yellow 10px;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  padding: 10px 20px;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 3vmax;
+  color: var(--secondary-font-color);
+  cursor: none;
+  text-align: center;
+  font-size: var(--heading-font-size);
+}
+
+.wrapper .input_box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  /* background-color: var(--tertiary-bg-color); */
+  margin: 30px 0;
+  transition: var(--trans-hover-efe);
+}
+
+.wrapper .input_box:hover {
+  border: 1px solid rgb(81, 241, 255);
+  border-radius: var(--border-radius-default);
+}
+
+.wrapper .input_box:active {
+  border-color: pink;
+  transform: var(--zoom-efect);
+}
+
+.input_box i {
+  color: white;
+}
+
+.input_box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-default);
+  font-size: var(--text-font-size);
+  color: var(--primary-font-color);
+  padding: 20px 45px 20px 20px;
+}
+
+.input_box input::-moz-placeholder {
+  color: var(--primary-font-color);
+  text-align: center;
+}
+
+.input_box input::placeholder {
+  color: var(--primary-font-color);
+  text-align: center;
+}
+
+.input_box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--text-font-size);
+}
+
+.wrapper .rem_forg {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-font-size);
+  margin: -15px 0 15px;
+}
+
+.wrapper .rem_forg label input {
+  accent-color: #fff;
+  margin-right: 4px;
+}
+
+.wrapper .logbtn {
+  width: 100%;
+  height: 30px;
+  background: #aaffff;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-default);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: var(--text-font-size);
+  color: var(--secondary-font-color);
+  font-weight: 600;
+  transition: var(--trans-hover-efe);
+}
+
+.wrapper .logbtn:hover {
+  background: var(--hover-color);
+  transform: var(--zoom-efect);
+}
+
+.wrapper .reg_link {
+  font-size: var(--text-font-size);
+  text-align: center;
+  /* margin-top:20px; */
+  margin: 20px 0 15px;
+}
+
+.Loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.Loading p {
+  color: gold;
+  font-size: 5rem;
+}
+.Loading p b {
+  color: white;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+    color: gold;
+  }
+  50% {
+    background-position: 100% 50%;
+    color: red;
+  }
+  100% {
+    background-position: 0% 50%;
+    color: gold;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+}
+
+.morning {
+  background-image: url(/src/assets/a-beautiful-morning.jpg) !important;
+}
+
+.afternoon {
+  background-image: url(/src/assets/a-beautiful-afternoon-.jpg) !important;
+}
+
+.evening {
+  background-image: url(/src/assets/a-beautiful-evening.jpg) !important;
+}
+
+.night {
+  background-image: url(/src/assets/beautiful-night.jpg) !important;
+}
+
+.Loading {
+  background: linear-gradient(45deg, cornflowerblue, lightblue, pink, hotpink);
+  background-size: 400% 400%;
+  animation: gradientBackground 4s ease 0s forwards infinite;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: gold;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+}
+
+.actionbtns span {
+  color: white;
+}
+.actionbtns span:hover {
+  color: gold;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+}
+
+.active {
+  color: gold;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+  padding: 4px;
+}
+
+header nav {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+}
+header nav a {
+  color: white;
+}
+
+.task {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+.task .tasktitle {
+  color: white;
+}
+.task .taskcategory {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(29px);
+          backdrop-filter: blur(29px);
+}
+.task .taskaddtime {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+  color: rgba(255, 255, 255, 0.5);
+}
+.task .taskheading {
+  color: white;
+}
+
+footer .h1 .greet, footer .h1 .time {
+  color: white;
+}
+
+.Work {
+  background-color: aqua !important;
+  color: white;
+}
+
+.Home {
+  background-color: yellow !important;
+  color: white;
+}
+
+.WellBeing {
+  background-color: bisque !important;
+  color: white;
+}
+
+.Important {
+  background-color: red;
+  color: white;
+}
+
+.Fitness {
+  background-color: green !important;
+  color: white;
+}
+
+.Health {
+  background-color: orange !important;
+  color: white;
+}
+
+.MentalHealth {
+  background-color: pink !important;
+  color: white;
+}
+
+.Personal {
+  background-color: white !important;
+  color: gold !important;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+@keyframes bgMove {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+.App {
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+}
+
+header,
+main,
+section,
+footer {
+  width: 100%;
+}
+
+header {
+  height: 6%;
+  width: 100%;
+  order: 3;
+}
+
+footer {
+  height: 20%;
+  width: 100%;
+  order: -1;
+}
+
+button {
+  padding: 10px;
+}
+
+a {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav {
+  height: 100%;
+  width: 50%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+header nav a {
+  padding: 15px;
+  border-radius: 50%;
+}
+
+main {
+  height: 74%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  justify-content: start;
+  align-items: center;
+  gap: 5%;
+  padding: 20px 1px;
+}
+
+textarea,
+input,
+select {
+  margin: 1% 0;
+  resize: none;
+  height: 40%;
+  width: 80%;
+  background: transparent;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  color: white;
+  border-bottom: 1px solid white;
+  border: 0;
+  outline: 0;
+}
+textarea:focus,
+input:focus,
+select:focus {
+  border-bottom: gold;
+}
+textarea:focus,
+input:focus,
+select:focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+textarea {
+  height: 70%;
+}
+
+option {
+  background: black;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  color: white;
+}
+
+.task {
+  min-height: 25%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  border-radius: 20px;
+}
+.task .tasktitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.task .tasktitle span {
+  font-size: small;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+  padding: 5px 2px;
+}
+.task .tasktitle .taskcategory {
+  position: absolute;
+  top: -5%;
+  left: 2%;
+  padding: 1px 12px;
+  border-radius: 10%;
+  z-index: 10;
+}
+.task .tasktitle .taskaddtime {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: smaller;
+  padding: 1px 3px;
+  border-radius: 4%;
+  z-index: 10;
+}
+.task .taskheading {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: balance;
+  height: 70%;
+  font-size: larger;
+}
+.task .actionbtns {
+  width: 100%;
+  padding: 2% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.task .actionbtns span,
+.task .actionbtns a {
+  font-size: small;
+}
+.task label {
+  min-width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  justify-content: start;
+  align-items: center;
+  gap: 2px;
+}
+.task label textarea {
+  height: 60%;
+}
+.task button {
+  width: 40%;
+  padding: 5px 2px;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+}
+.task button:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+  transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  justify-content: end;
+  align-items: start;
+  padding: 2px 10px;
+}
+footer .h1 {
+  font-size: 3vmax;
+  color: white;
+  text-align: center;
+}
+footer .h1 .greet {
+  font-size: 4vmax;
+}
+footer .h1 .greet,
+footer .h1 .time {
+  text-align: left;
+}
+footer .h1 .time {
+  opacity: 0.7;
+}
+
+.addTask, .readTask {
+  height: 100%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+  color: white;
+}
+.addTask label, .readTask label {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+  padding: 2px 4px;
+  text-align: center;
+}
+.addTask button, .readTask button {
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 5px 20px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+}
+.addTask button:hover, .readTask button:hover {
+  color: gold;
+  border-color: gold;
+}
+
+.readTask {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-direction: column !important;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  gap: 2%;
+}
+.readTask a {
+  background-color: transparent;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2.4px);
+          backdrop-filter: blur(2.4px);
+}
+
+.backbtn {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+@media screen and (max-width: 1180px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .Loading p {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 1180px) {
+  \ .App {
+    height: 100vh;
+    width: 100%;
+  }
+  .addTask {
+    height: 90%;
+    width: 80%;
+  }
+  .Loading p {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .Loading p {
+    font-size: 4rem;
+  }
+  .App {
+    width: 100%;
+  }
+  .task {
+    width: 85%;
+    height: 35%;
+  }
+}
+@media screen and (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .Loading p {
+    font-size: 2rem;
+  }
+  .App {
+    width: 100%;
+  }
+  .task {
+    width: 100%;
+    min-height: 28%;
+  }
+}/*# sourceMappingURL=index.css.map */

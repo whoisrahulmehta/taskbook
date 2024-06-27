@@ -1,0 +1,129 @@
+$pri-bg: lightblue;
+$seco-bg: rgb(0, 0, 0);
+
+$hoverCol : gold;
+
+@mixin MFD {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  // color: white;
+  backdrop-filter: blur(2.4px);
+}
+@mixin MFL {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  // color: black;
+  backdrop-filter: blur(2.4px);
+}
+
+.morning{
+  background-image: url(/src/assets/a-beautiful-morning.jpg) !important; 
+}
+.afternoon{
+  background-image: url(/src/assets/a-beautiful-afternoon-.jpg) !important; 
+}
+.evening{
+  background-image: url(/src/assets/a-beautiful-evening.jpg )!important ;
+}
+.night{
+  background-image: url(/src/assets/beautiful-night.jpg) !important; 
+}
+
+.Loading {
+  background: linear-gradient(45deg, cornflowerblue, lightblue, pink, hotpink);
+  background-size: 400% 400%;
+  animation: gradientBackground 4s ease 0s forwards infinite;
+}
+
+a{
+  color: white;
+&:hover{
+  color: $hoverCol;
+  @include MFD;
+}}
+.actionbtns{
+  span{
+    color: white;
+    &:hover{
+      color: $hoverCol;
+      @include MFD;
+    }
+  }
+}
+.active{
+  color: gold;
+  @include MFD;
+  padding: 4px;
+}
+
+//header 
+header{
+  nav{
+     @include MFD;
+     a{
+    color:white;
+     }
+  }
+}
+
+//main 
+.task{
+@include MFL;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  .tasktitle{
+    color: white;
+  }
+  .taskcategory{
+    @include MFL;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(29px);
+  }
+  .taskaddtime{
+    @include MFL;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .taskheading{
+    color:white;
+  }
+}
+
+//footer
+footer{
+  .h1{
+    .greet , .time{
+     color: white;
+    }
+  }
+}
+.Work{
+  background-color: aqua !important;
+  color: white;
+}
+.Home{
+  background-color: yellow !important;
+  color: white;
+}
+.WellBeing{
+  background-color: bisque !important;
+  color: white;
+}
+.Important{
+  background-color: red;
+  color: white;
+}
+.Fitness{
+  background-color: green !important;
+  color: white;
+}
+.Health{
+  background-color: orange !important;
+  color: white;
+}
+.MentalHealth{
+  background-color: pink !important;
+  color: white;
+}
+.Personal{
+  background-color: white !important;
+  color: gold !important;
+}

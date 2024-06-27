@@ -1,0 +1,20 @@
+@media screen and (max-width: 480px){
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .Loading{
+    p{
+      font-size: 2rem;
+    }
+   }
+  
+   .App{
+    width: 100%;
+  }
+  .task{
+    width: 100%;
+    min-height: 28%;
+  }
+  }

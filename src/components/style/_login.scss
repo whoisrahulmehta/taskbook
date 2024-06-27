@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+
+:root {
+  /* let make some variables */
+  --primary-bg-color: aliceblue;
+  --secondary-bg-color: purple;
+  --tertiary-bg-color: orange;
+  --heading-font-size: 2rem;
+  --text-font-size: 1rem;
+  --primary-font-color: ghostwhite;
+  --secondary-font-color: rgb(255, 255, 255);
+  --hover-color: red;
+  --border-radius-default: 40px;
+  --zoom-efect: scaleX(1.06) scaleY(1.05);
+  --trans-hover-efe: all ease 0.5s;
+}
+
+a {
+  /* color:var(--secondary-font-color); */
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  /* text-decoration-color: black; */
+  color: var(--hover-color);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+//   min-height: 100vh;
+}
+.wrapper {
+  width: 420px;
+  margin: 2px auto;
+  /* background-color: var(--secondary-bg-color); */
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 1px 10px 10px yellow 10px;
+  backdrop-filter: blur(1px);
+  padding: 10px 20px;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.wrapper h1 {
+    font-size: 3vmax;
+  color: var(--secondary-font-color);
+  cursor: none;
+  text-align: center;
+  font-size: var(--heading-font-size);
+}
+.wrapper .input_box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  /* background-color: var(--tertiary-bg-color); */
+  margin: 30px 0;
+  transition: var(--trans-hover-efe);
+}
+.wrapper .input_box:hover {
+  border: 1px solid rgb(81, 241, 255);
+  border-radius: var(--border-radius-default);
+}
+.wrapper .input_box:active {
+  border-color: pink;
+  transform: var(--zoom-efect);
+}
+.input_box i {
+  color: white;
+}
+.input_box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-default);
+  font-size: var(--text-font-size);
+  color: var(--primary-font-color);
+  padding: 20px 45px 20px 20px;
+}
+.input_box input::placeholder {
+  color: var(--primary-font-color);
+  text-align: center;
+}
+.input_box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--text-font-size);
+}
+.wrapper .rem_forg {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-font-size);
+  margin: -15px 0 15px;
+}
+.wrapper .rem_forg label input {
+  accent-color: #fff;
+  margin-right: 4px;
+}
+.wrapper .logbtn {
+  width: 100%;
+  height: 30px;
+  background: #afff;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius-default);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: var(--text-font-size);
+  color: var(--secondary-font-color);
+  font-weight: 600;
+  transition: var(--trans-hover-efe);
+}
+.wrapper .logbtn:hover {
+  background: var(--hover-color);
+  transform: var(--zoom-efect);
+}
+.wrapper .reg_link {
+  font-size: var(--text-font-size);
+  text-align: center;
+  /* margin-top:20px; */
+  margin: 20px 0 15px;
+}
