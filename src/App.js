@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import Loadingpage from "./components/Loadingpage";
 import Landingpage from "./components/Landingpage";
 import { Provider } from 'react-redux';
@@ -55,11 +55,11 @@ useEffect(()=>{
   return (
     <Provider store={store}>
     <div className="App ">
-     <BrowserRouter  basename="/">
+     <HashRouter  basename="/">
      {
       loading ? <Loadingpage /> : <Landingpage  />
      }
-     </BrowserRouter>
+     </HashRouter>
     </div>
     </Provider>
   );
