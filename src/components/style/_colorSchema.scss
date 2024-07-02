@@ -75,7 +75,7 @@ header{
   }
   .taskcategory{
     @include MFL;
-    background-color: rgba(255, 255, 255, 0.3);
+    // background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(29px);
   }
   .taskaddtime{
@@ -108,7 +108,7 @@ footer{
   color: white;
 }
 .Important{
-  background-color: red;
+  background-color: red !important;
   color: white;
 }
 .Fitness{
