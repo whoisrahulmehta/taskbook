@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taskbook/static/css/main.b1c2a420.css",
-    "main.js": "/taskbook/static/js/main.bc0e394a.js",
+    "main.js": "/taskbook/static/js/main.b827151b.js",
     "static/js/453.35ae4b25.chunk.js": "/taskbook/static/js/453.35ae4b25.chunk.js",
     "static/media/beautiful-night.jpg": "/taskbook/static/media/beautiful-night.23d588fb9f31035ef957.jpg",
     "static/media/day.jpg": "/taskbook/static/media/day.fda81752613c2fa436d3.jpg",
@@ -9,11 +9,11 @@
     "static/media/evening.jpg": "/taskbook/static/media/evening.facb2b190b6a813a4cff.jpg",
     "index.html": "/taskbook/index.html",
     "main.b1c2a420.css.map": "/taskbook/static/css/main.b1c2a420.css.map",
-    "main.bc0e394a.js.map": "/taskbook/static/js/main.bc0e394a.js.map",
+    "main.b827151b.js.map": "/taskbook/static/js/main.b827151b.js.map",
     "453.35ae4b25.chunk.js.map": "/taskbook/static/js/453.35ae4b25.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1c2a420.css",
-    "static/js/main.bc0e394a.js"
+    "static/js/main.b827151b.js"
   ]
 }
