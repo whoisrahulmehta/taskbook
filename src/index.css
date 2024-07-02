@@ -721,4 +721,14 @@ footer .h1 .time {
     width: 100%;
     min-height: 28%;
   }
+  .addTask {
+    width: 95%;
+    height: 75%;
+  }
+  main {
+    height: 55%;
+  }
+  footer {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=index.css.map */
