@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/taskbook/static/css/main.80daf894.css",
-    "main.js": "/taskbook/static/js/main.cf3f680b.js",
+    "main.css": "/taskbook/static/css/main.24f54758.css",
+    "main.js": "/taskbook/static/js/main.bc0e394a.js",
     "static/js/453.35ae4b25.chunk.js": "/taskbook/static/js/453.35ae4b25.chunk.js",
     "static/media/a-beautiful-morning.jpg": "/taskbook/static/media/a-beautiful-morning.5fe9a78ad41c073f5e96.jpg",
     "static/media/a-beautiful-evening.jpg": "/taskbook/static/media/a-beautiful-evening.45e05fcd76fe1bc566c1.jpg",
     "static/media/beautiful-night.jpg": "/taskbook/static/media/beautiful-night.075a5c37311788992982.jpg",
     "static/media/a-beautiful-afternoon-.jpg": "/taskbook/static/media/a-beautiful-afternoon-.75e1fa47fca81784da39.jpg",
     "index.html": "/taskbook/index.html",
-    "main.80daf894.css.map": "/taskbook/static/css/main.80daf894.css.map",
-    "main.cf3f680b.js.map": "/taskbook/static/js/main.cf3f680b.js.map",
+    "main.24f54758.css.map": "/taskbook/static/css/main.24f54758.css.map",
+    "main.bc0e394a.js.map": "/taskbook/static/js/main.bc0e394a.js.map",
     "453.35ae4b25.chunk.js.map": "/taskbook/static/js/453.35ae4b25.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80daf894.css",
-    "static/js/main.cf3f680b.js"
+    "static/css/main.24f54758.css",
+    "static/js/main.bc0e394a.js"
   ]
 }
