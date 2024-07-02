@@ -58,7 +58,7 @@ navigate('/');
           </div>
         </div>
       </main>
-      <footer style={{textAlign:'center'}}>
+      <footer style={{textAlign:'center', height: "1vh"}}>
       </footer>
     </>
   );
